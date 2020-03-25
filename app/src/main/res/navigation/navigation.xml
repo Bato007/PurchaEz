@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/startinScreen">
+    <fragment
+        android:id="@+id/startinScreen"
+        android:name="com.example.purchaez.starting_screen.StartingScreenFragment"
+        android:label="StartinScreen"
+        tools:layout="@layout/starting_screen_fragment">
+        <action
+            android:id="@+id/action_startinScreen_to_toBuyFragment"
+            app:destination="@id/toBuyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/toBuyFragment"
+        android:name="com.example.purchaez.to_buy.ToBuyFragment"
+        android:label="to_buy_fragment"
+        tools:layout="@layout/to_buy_fragment" />
+</navigation>

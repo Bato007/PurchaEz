@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">PurchaEz</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="buy">Buy</string>
+    <string name="to_buy">To buy</string>
+    <string name="buying_record">Buying Record</string>
+    <string name="offers">Offers</string>
+    <string name="todo">TODO</string>
+    <string name="app_name">PurchaEz</string>
+    <string name="sing_in">Sing In</string>
+    <string name="sing_up">Sing Up</string>
 </resources>
