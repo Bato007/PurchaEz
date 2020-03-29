@@ -6,20 +6,33 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.databinding.DataBindingUtil
+import androidx.navigation.findNavController
 import com.example.purchaez.R
+import com.example.purchaez.databinding.LoginFragmentBinding
 
 /**
  * A simple [Fragment] subclass.
  */
 class LoginFragment : Fragment() {
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        return TextView(activity).apply {
-            setText(R.string.hello_blank_fragment)
+    private lateinit var binding: LoginFragmentBinding
+
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?): View? {
+
+        binding = DataBindingUtil.inflate(inflater,
+            R.layout.login_fragment, container, false)
+
+        binding.singUpButton.setOnClickListener { view:View ->
+            view.findNavController().navigate(R.id.action_loginFragment_to_createAccountFragment)
         }
+
+        binding.singInButton.setOnClickListener { view:View ->
+            view.findNavController().navigate(R.id.action_loginFragment_to_startinScreen)
+        }
+
+        return binding.root
     }
 
 }

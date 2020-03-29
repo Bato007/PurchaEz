@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context="com.example.purchaez.login.CreateAccountFragment">
 
     <data>
 
@@ -16,7 +17,6 @@
             android:id="@+id/usernameInput"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="144dp"
             android:background="@android:color/background_light"
             android:ems="10"
             android:hint="@string/username"
@@ -38,21 +38,40 @@
             android:importantForAutofill="no"
             android:inputType="textPassword"
             android:textAlignment="center"
-            app:layout_constraintBottom_toTopOf="@+id/textView"
+            app:layout_constraintBottom_toTopOf="@+id/confirmPasswordInput"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/usernameInput" />
 
-        <TextView
-            android:id="@+id/textView"
+        <EditText
+            android:id="@+id/confirmPasswordInput"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TextView"
-            android:textColor="@android:color/background_light"
-            app:layout_constraintBottom_toTopOf="@+id/singUpButton"
+            android:background="@android:color/background_light"
+            android:ems="10"
+            android:hint="@string/confirm_password"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toTopOf="@+id/emailInput"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/passwordInput" />
+
+        <EditText
+            android:id="@+id/emailInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/background_light"
+            android:ems="10"
+            android:hint="@string/email"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toTopOf="@+id/singUpButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/confirmPasswordInput" />
 
         <Button
             android:id="@+id/singUpButton"
@@ -60,24 +79,10 @@
             android:layout_height="wrap_content"
             android:background="@color/colorPrimary"
             android:text="@string/sing_up"
-            app:layout_constraintBottom_toTopOf="@+id/singInButton"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-        <Button
-            android:id="@+id/singInButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/colorPrimary"
-            android:text="@string/sing_in"
-            android:textColor="@android:color/background_dark"
-            android:textColorHint="@android:color/background_light"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/singUpButton" />
+            app:layout_constraintTop_toBottomOf="@+id/emailInput" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

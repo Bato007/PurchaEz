@@ -12,10 +12,34 @@
         <action
             android:id="@+id/action_startinScreen_to_toBuyFragment"
             app:destination="@id/toBuyFragment" />
+        <action
+            android:id="@+id/action_startinScreen_to_loginFragment"
+            app:destination="@id/loginFragment" />
     </fragment>
     <fragment
         android:id="@+id/toBuyFragment"
         android:name="com.example.purchaez.to_buy.ToBuyFragment"
         android:label="to_buy_fragment"
         tools:layout="@layout/to_buy_fragment" />
+    <fragment
+        android:id="@+id/createAccountFragment"
+        android:name="com.example.purchaez.login.CreateAccountFragment"
+        android:label="create_account_fragment"
+        tools:layout="@layout/create_account_fragment" >
+        <action
+            android:id="@+id/action_createAccountFragment_to_startinScreen"
+            app:destination="@id/startinScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.purchaez.login.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/login_fragment">
+        <action
+            android:id="@+id/action_loginFragment_to_createAccountFragment"
+            app:destination="@id/createAccountFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_startinScreen"
+            app:destination="@id/startinScreen" />
+    </fragment>
 </navigation>
