@@ -16,4 +16,6 @@
     <string name="email">Email</string>
     <string name="about_icon">about icon</string>
     <string name="about_text">This is an app that</string>
+    <string name="profile">Profile</string>
+    <string name="about_title">About</string>
 </resources>

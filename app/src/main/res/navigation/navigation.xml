@@ -42,4 +42,8 @@
             android:id="@+id/action_loginFragment_to_startinScreen"
             app:destination="@id/startinScreen" />
     </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.purchaez.about.AboutFragment"
+        android:label="AboutFragment" />
 </navigation>
