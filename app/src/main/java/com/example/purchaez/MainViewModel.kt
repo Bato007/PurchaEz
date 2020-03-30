@@ -1,6 +1,7 @@
 package com.example.purchaez
 
 import android.content.Context
+import android.provider.ContactsContract
 import androidx.lifecycle.ViewModel
 import com.example.purchaez.dataBase.DataBaseHandler
 import com.example.purchaez.dataBase.Users
@@ -8,6 +9,7 @@ import com.example.purchaez.dataBase.Users
 class MainViewModel: ViewModel() {
 
     private lateinit var dataBase: DataBaseHandler
+    private var logged = 0
 
 
     // Crear cuenta
@@ -24,8 +26,21 @@ class MainViewModel: ViewModel() {
     }
 
     // Iniciar sesion
-    fun login(){
+    fun login(user:String, password:String, context: Context):Boolean{
+        dataBase = DataBaseHandler(context)
+        val userList = dataBase.readData()
+        for(usuario in userList){
+            if(usuario.UserName.equals(user) && usuario.Password.equals(password) ){
+                logged = 1
+                return true
+            }
+        }
+        return false
 
+    }
+
+    fun checkLogged(): Int {
+        return logged
     }
 
 }
