@@ -27,8 +27,12 @@ class StartingScreenFragment : Fragment() {
             view.findNavController().navigate(R.id.action_startinScreen_to_toBuyFragment)
         }
 
-        binding.offerButton.setOnClickListener { view:View ->
+        binding.buyingRecordButton.setOnClickListener { view: View ->
             view.findNavController().navigate(R.id.action_startinScreen_to_loginFragment)
+        }
+
+        binding.offerButton.setOnClickListener { view:View ->
+
         }
 
         return this.binding.root
