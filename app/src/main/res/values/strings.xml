@@ -18,4 +18,5 @@
     <string name="about_text">This is an app that</string>
     <string name="profile">Profile</string>
     <string name="about_title">About</string>
+    <string name="app_icon">App icon</string>
 </resources>

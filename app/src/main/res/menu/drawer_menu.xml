@@ -4,11 +4,13 @@
     tools:showIn="navigation_view">
 
     <group android:checkableBehavior="single">
-        <item android:id="@+id/loginFragment"
-            android:icon="@drawable/profile_icon_foreground"
+        <item
+            android:id="@+id/loginFragment"
+            android:icon="@drawable/ic_account_circle_black_24dp"
             android:title="@string/profile"/>
-        <item android:id="@+id/aboutFragment"
-            android:icon="@drawable/about_icon_foreground"
+        <item
+            android:id="@+id/aboutFragment"
+            android:icon="@drawable/ic_help_black_24dp"
             android:title="@string/about_title"/>
     </group>
 

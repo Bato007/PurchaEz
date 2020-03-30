@@ -48,5 +48,6 @@
     <fragment
         android:id="@+id/aboutFragment"
         android:name="com.example.purchaez.about.AboutFragment"
-        android:label="AboutFragment" />
+        android:label="AboutFragment"
+        tools:layout="@layout/about_fragment"/>
 </navigation>
