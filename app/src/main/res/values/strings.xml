@@ -1,7 +1,5 @@
 <resources>
     <string name="app_name">PurchaEz</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="buy">Buy</string>
     <string name="to_buy">To buy</string>
@@ -20,4 +18,9 @@
     <string name="about_title">About</string>
     <string name="app_icon">App icon</string>
     <string name="new_product">New Product</string>
+    <string name="offers_title">The best offers around you…</string>
+    <string name="offer_twoPerOne">Obtén un 2x1 en tu siguiente compra de jabón líquido de manos.</string>
+    <string name="offer_pizza">¡Compra un combo de dos pizzas y una soda de 3 litros a solo Q50.00!</string>
+    <string name="offer_shoes">Obtén un descuento del 40% en tu próxima compra de zapatos.</string>
+    <string name="offer_meat">¡Compra 2 liras de carne y llévate 1 gratis!</string>
 </resources>
