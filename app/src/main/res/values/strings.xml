@@ -13,7 +13,18 @@
     <string name="confirm_password">Confirm Password</string>
     <string name="email">Email</string>
     <string name="about_icon">about icon</string>
-    <string name="about_text">This is an app that</string>
+    <string name="about_text">This app is designed for you to stop worrying about groceries\'
+        list and making you get full advantage of your time. Besides, one of the most common
+        issues when going to the grocery store is that you never know whether you are carrying
+        exact change or not. Furthermore, sometimes its to late when you realize that some product
+        you bought was actually cheaper in other places, but how would you know? All this problems
+        are meant to be solved by using this app. So if you are reading this, ¡congratulations!
+        You made the right move when hitting the download button. Don\'t forget to keep track of
+        future updates and to give us not only the negative, but also the positive feedback.
+        Remember that your opinions help us improve our app, and eventually helps you out creating
+        a reasonable budget and saving you not only money, but also time. Follow us on our social
+        media (Twitter, Facebook, Instagram) and stay tuned to further news and updates. Its great
+        to have you on board! \nSincerely yours, \n    The PurchaEz Team. </string>
     <string name="profile">Profile</string>
     <string name="about_title">About</string>
     <string name="app_icon">App icon</string>
