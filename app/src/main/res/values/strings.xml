@@ -34,5 +34,6 @@
     <string name="your_result">Your Result</string>
     <string name="your_market_list">Your Market List</string>
     <string name="add_product">Add Product</string>
+    <string name="product_cost">Product Cost</string>
 
 </resources>

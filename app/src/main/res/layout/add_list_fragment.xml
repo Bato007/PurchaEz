@@ -12,16 +12,31 @@
             android:id="@+id/inputList"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:autofillHints="@string/new_product"
             android:ems="10"
             android:hint="@string/new_product"
             android:inputType="textPersonName"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toTopOf="@+id/costItem"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/costItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/product_cost"
+            android:inputType="numberDecimal"
             android:textAlignment="center"
             app:layout_constraintBottom_toTopOf="@+id/addButton"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:autofillHints="@string/new_product" />
+            app:layout_constraintTop_toBottomOf="@+id/inputList"
+            android:autofillHints="@string/product_cost" />
 
         <Button
             android:id="@+id/addButton"
@@ -33,6 +48,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/inputList" />
+            app:layout_constraintTop_toBottomOf="@+id/costItem" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

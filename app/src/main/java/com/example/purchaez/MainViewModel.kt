@@ -2,12 +2,21 @@ package com.example.purchaez
 
 import android.content.Context
 import android.provider.ContactsContract
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.purchaez.dataBase.DataBaseHandler
 import com.example.purchaez.dataBase.Users
+import com.example.purchaez.recycleView.Items
 
 class MainViewModel: ViewModel() {
 
+    // Live Data
+    private val _totalMoney = MutableLiveData<Float>()
+    val totalMoney: LiveData<Float>
+            get() = _totalMoney
+
+    private var item: List<Items> = ArrayList()
     private lateinit var dataBase: DataBaseHandler
     private var logged = 0
 
