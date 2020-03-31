@@ -45,7 +45,7 @@ class StartingScreenFragment : Fragment() {
         }
 
         binding.offerButton.setOnClickListener { view:View ->
-
+            view.findNavController().navigate(R.id.action_startinScreen_to_offerFragment)
         }
 
         return this.binding.root

@@ -15,6 +15,12 @@
         <action
             android:id="@+id/action_startinScreen_to_loginFragment"
             app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_startinScreen_to_recordFragment2"
+            app:destination="@id/recordFragment2" />
+        <action
+            android:id="@+id/action_startinScreen_to_offerFragment"
+            app:destination="@id/offerFragment" />
     </fragment>
     <fragment
         android:id="@+id/toBuyFragment"
@@ -50,4 +56,14 @@
         android:name="com.example.purchaez.about.AboutFragment"
         android:label="AboutFragment"
         tools:layout="@layout/about_fragment"/>
+    <fragment
+        android:id="@+id/recordFragment2"
+        android:name="com.example.purchaez.record.RecordFragment"
+        android:label="fragment_record"
+        tools:layout="@layout/fragment_record" />
+    <fragment
+        android:id="@+id/offerFragment"
+        android:name="com.example.purchaez.offers.OfferFragment"
+        android:label="fragment_offer"
+        tools:layout="@layout/fragment_offer" />
 </navigation>

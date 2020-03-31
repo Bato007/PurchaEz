@@ -22,5 +22,13 @@
     <string name="offer_twoPerOne">Obtén un 2x1 en tu siguiente compra de jabón líquido de manos.</string>
     <string name="offer_pizza">¡Compra un combo de dos pizzas y una soda de 3 litros a solo Q50.00!</string>
     <string name="offer_shoes">Obtén un descuento del 40% en tu próxima compra de zapatos.</string>
-    <string name="offer_meat">¡Compra 2 liras de carne y llévate 1 gratis!</string>
+    <string name="offer_meat">¡Compra 2 libras de carne y llévate 1 gratis!</string>
+    <string name="offer_pan">En tu siguiente compra de Q400.00 o más te regalamos un sartén</string>
+    <string name="offer_electro">¿Quieres cambiar de electrodomésticos? ¡Consiguelos con 30% de descuento!</string>
+    <string name="offer_vegetable">¿Buscando una alimentación sana? ¡Compra una libra de verduras y consigue la segunda a mitad de precio!</string>
+    <string name="offer_party">¿Quieres fiesta? Obtén un 50% de descuento en artículos de fiesta (incluida la bebida)</string>
+    <string name="offer_coffee">Con la compra de un bote de 300g de café, ¡llévate uno de 225g totalmente gratis!</string>
+    <string name="offer_hotdog">¡Compra un paquete de 24 salchichas para hot dog y llevate un paquete de 10 gratis!</string>
+    <string name="img_description">Imagen del fragmento oferta</string>
+
 </resources>
