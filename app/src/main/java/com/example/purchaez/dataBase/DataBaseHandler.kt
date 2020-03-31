@@ -18,7 +18,7 @@ class DataBaseHandler(var context: Context?): SQLiteOpenHelper(context, DATABASE
                 COL_ID+" INTEGER PRIMARY KEY AUTOINCREMENT,"+
                 COL_USER_NAME+" VARCHAR(256),"+
                 COL_EMAIL +" VARCHAR(256),"+
-                COL_USER_PASSWORD+" VARCHAR(256))";
+                COL_USER_PASSWORD+" VARCHAR(256))"
 
         db?.execSQL(createTable)
     }
