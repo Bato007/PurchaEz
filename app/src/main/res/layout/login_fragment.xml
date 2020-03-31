@@ -4,7 +4,9 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <data>
-
+        <variable
+            name="Text"
+            type="String" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -47,7 +49,7 @@
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TextView"
+            android:text="@{Text}"
             android:textColor="@android:color/background_light"
             app:layout_constraintBottom_toTopOf="@+id/singUpButton"
             app:layout_constraintEnd_toEndOf="parent"

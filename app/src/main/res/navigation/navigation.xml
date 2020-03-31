@@ -41,5 +41,13 @@
         <action
             android:id="@+id/action_loginFragment_to_startinScreen"
             app:destination="@id/startinScreen" />
+        <action
+            android:id="@+id/action_loginFragment_to_toBuyFragment"
+            app:destination="@id/toBuyFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.purchaez.about.AboutFragment"
+        android:label="AboutFragment"
+        tools:layout="@layout/about_fragment"/>
 </navigation>
