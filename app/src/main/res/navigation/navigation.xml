@@ -13,20 +13,21 @@
             android:id="@+id/action_startinScreen_to_toBuyFragment"
             app:destination="@id/toBuyFragment" />
         <action
-            android:id="@+id/action_startinScreen_to_loginFragment"
-            app:destination="@id/loginFragment" />
-        <action
-            android:id="@+id/action_startinScreen_to_recordFragment2"
-            app:destination="@id/recordFragment2" />
-        <action
             android:id="@+id/action_startinScreen_to_offerFragment"
             app:destination="@id/offerFragment" />
+        <action
+            android:id="@+id/action_startinScreen_to_loginFragment"
+            app:destination="@id/loginFragment" />
     </fragment>
     <fragment
         android:id="@+id/toBuyFragment"
         android:name="com.example.purchaez.to_buy.ToBuyFragment"
         android:label="to_buy_fragment"
-        tools:layout="@layout/to_buy_fragment" />
+        tools:layout="@layout/to_buy_fragment" >
+        <action
+            android:id="@+id/action_toBuyFragment_to_addListFragment"
+            app:destination="@id/addListFragment" />
+    </fragment>
     <fragment
         android:id="@+id/createAccountFragment"
         android:name="com.example.purchaez.login.CreateAccountFragment"
@@ -57,13 +58,13 @@
         android:label="AboutFragment"
         tools:layout="@layout/about_fragment"/>
     <fragment
-        android:id="@+id/recordFragment2"
-        android:name="com.example.purchaez.record.RecordFragment"
-        android:label="fragment_record"
-        tools:layout="@layout/fragment_record" />
-    <fragment
         android:id="@+id/offerFragment"
         android:name="com.example.purchaez.offers.OfferFragment"
         android:label="fragment_offer"
         tools:layout="@layout/fragment_offer" />
+    <fragment
+        android:id="@+id/addListFragment"
+        android:name="com.example.purchaez.addList.AddListFragment"
+        android:label="add_list_fragment"
+        tools:layout="@layout/add_list_fragment" />
 </navigation>
