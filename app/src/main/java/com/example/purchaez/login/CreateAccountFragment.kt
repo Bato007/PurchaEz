@@ -9,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.findNavController
@@ -27,7 +28,7 @@ class CreateAccountFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?): View? {
-
+        (activity as AppCompatActivity).supportActionBar?.title = "PurchaEz"
         binding = DataBindingUtil.inflate(inflater,
             R.layout.create_account_fragment, container, false)
 

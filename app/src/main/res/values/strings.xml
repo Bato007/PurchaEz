@@ -30,5 +30,9 @@
     <string name="offer_coffee">Con la compra de un bote de 300g de café, ¡llévate uno de 225g totalmente gratis!</string>
     <string name="offer_hotdog">¡Compra un paquete de 24 salchichas para hot dog y llevate un paquete de 10 gratis!</string>
     <string name="img_description">Imagen del fragmento oferta</string>
+    <string name="share">Share</string>
+    <string name="your_result">Your Result</string>
+    <string name="your_market_list">Your Market List</string>
+    <string name="add_product">Add Product</string>
 
 </resources>

@@ -1,3 +1,5 @@
+@file:Suppress("DEPRECATION")
+
 package com.example.purchaez.login
 
 import android.os.Bundle
@@ -7,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.findNavController
@@ -24,7 +27,7 @@ class LoginFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?): View? {
-
+        (activity as AppCompatActivity).supportActionBar?.title = "PurchaEz"
         binding = DataBindingUtil.inflate(inflater,
             R.layout.login_fragment, container, false)
 

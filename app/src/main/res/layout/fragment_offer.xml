@@ -1,300 +1,303 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".offers.OfferFragment">
+    tools:context="com.example.purchaez.offers.OfferFragment">
 
-    <ScrollView
-        android:id="@+id/scrollView2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_width="0dp"
-        android:layout_height="0dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+        <ScrollView
+            android:id="@+id/scrollView2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="0dp">
 
-            <TextView
-                android:id="@+id/offerTitle"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="40dp"
-                android:layout_marginTop="50dp"
-                android:layout_marginEnd="40dp"
-                android:layout_marginBottom="20dp"
-                android:fontFamily="@font/roboto"
-                android:text="@string/offers_title"
-                android:textAlignment="center"
-                android:textColor="#000000"
-                android:textSize="40sp" />
+                android:orientation="vertical">
 
-            <ImageView
-                android:id="@+id/imageView1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="200dp"
-                android:layout_marginBottom="30dp"
-                android:adjustViewBounds="true"
-                android:contentDescription="@string/img_description"
-                app:srcCompat="@drawable/twoperone" />
+                <TextView
+                    android:id="@+id/offerTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/offers_title"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="40sp" />
 
-            <Button
-                android:id="@+id/buttonOfferOne"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="225dp"
-                android:layout_marginTop="-125dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginBottom="20dp"
-                android:background="@color/colorAccent"
-                android:fontFamily="@font/roboto"
-                android:text="@string/offer_twoPerOne"
-                android:textAlignment="center"
-                android:textColor="#FFFFFF" />
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="200dp"
+                    android:layout_marginBottom="30dp"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/img_description"
+                    app:srcCompat="@drawable/twoperone" />
 
-            <ImageView
-                android:id="@+id/imageView2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="200dp"
-                android:layout_marginBottom="30dp"
-                android:adjustViewBounds="true"
-                android:contentDescription="@string/img_description"
-                app:srcCompat="@drawable/pizza" />
+                <Button
+                    android:id="@+id/buttonOfferOne"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="225dp"
+                    android:layout_marginTop="-125dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@color/colorAccent"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/offer_twoPerOne"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF" />
 
-            <Button
-                android:id="@+id/buttonOfferTwo"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="225dp"
-                android:layout_marginTop="-125dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginBottom="20dp"
-                android:background="@color/colorAccent"
-                android:fontFamily="@font/roboto"
-                android:text="@string/offer_pizza"
-                android:textAlignment="center"
-                android:textColor="#FFFFFF" />
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="200dp"
+                    android:layout_marginBottom="30dp"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/img_description"
+                    app:srcCompat="@drawable/pizza" />
 
-            <ImageView
-                android:id="@+id/imageView3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="200dp"
-                android:layout_marginBottom="30dp"
-                android:adjustViewBounds="true"
-                android:contentDescription="@string/img_description"
-                app:srcCompat="@drawable/shoes" />
+                <Button
+                    android:id="@+id/buttonOfferTwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="225dp"
+                    android:layout_marginTop="-125dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@color/colorAccent"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/offer_pizza"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF" />
 
-            <Button
-                android:id="@+id/buttonOfferThree"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="225dp"
-                android:layout_marginTop="-125dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginBottom="20dp"
-                android:background="@color/colorAccent"
-                android:fontFamily="@font/roboto"
-                android:text="@string/offer_shoes"
-                android:textAlignment="center"
-                android:textColor="#FFFFFF" />
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="200dp"
+                    android:layout_marginBottom="30dp"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/img_description"
+                    app:srcCompat="@drawable/shoes" />
 
-            <ImageView
-                android:id="@+id/imageView4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginEnd="200dp"
-                android:layout_marginBottom="30dp"
-                android:adjustViewBounds="true"
-                android:contentDescription="@string/img_description"
-                app:srcCompat="@drawable/meat" />
+                <Button
+                    android:id="@+id/buttonOfferThree"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="225dp"
+                    android:layout_marginTop="-125dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@color/colorAccent"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/offer_shoes"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF" />
 
-            <Button
-                android:id="@+id/buttonOfferFour"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="225dp"
-                android:layout_marginTop="-110dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginBottom="20dp"
-                android:background="@color/colorAccent"
-                android:fontFamily="@font/roboto"
-                android:text="@string/offer_meat"
-                android:textAlignment="center"
-                android:textColor="#FFFFFF" />
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="200dp"
+                    android:layout_marginBottom="30dp"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/img_description"
+                    app:srcCompat="@drawable/meat" />
 
-            <ImageView
-                android:id="@+id/imageView5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="200dp"
-                android:layout_marginBottom="30dp"
-                android:adjustViewBounds="true"
-                android:contentDescription="@string/img_description"
-                app:srcCompat="@drawable/pan" />
+                <Button
+                    android:id="@+id/buttonOfferFour"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="225dp"
+                    android:layout_marginTop="-110dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@color/colorAccent"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/offer_meat"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF" />
 
-            <Button
-                android:id="@+id/buttonOfferFive"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="225dp"
-                android:layout_marginTop="-150dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginBottom="20dp"
-                android:background="@color/colorAccent"
-                android:fontFamily="@font/roboto"
-                android:text="@string/offer_pan"
-                android:textAlignment="center"
-                android:textColor="#FFFFFF" />
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="200dp"
+                    android:layout_marginBottom="30dp"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/img_description"
+                    app:srcCompat="@drawable/pan" />
 
-            <ImageView
-                android:id="@+id/imageView6"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="40dp"
-                android:layout_marginEnd="200dp"
-                android:layout_marginBottom="30dp"
-                android:adjustViewBounds="true"
-                android:contentDescription="@string/img_description"
-                app:srcCompat="@drawable/electro" />
+                <Button
+                    android:id="@+id/buttonOfferFive"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="225dp"
+                    android:layout_marginTop="-150dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@color/colorAccent"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/offer_pan"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF" />
 
-            <Button
-                android:id="@+id/buttonOfferSix"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="225dp"
-                android:layout_marginTop="-115dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginBottom="20dp"
-                android:background="@color/colorAccent"
-                android:fontFamily="@font/roboto"
-                android:text="@string/offer_electro"
-                android:textAlignment="center"
-                android:textColor="#FFFFFF" />
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="200dp"
+                    android:layout_marginBottom="30dp"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/img_description"
+                    app:srcCompat="@drawable/electro" />
 
-            <ImageView
-                android:id="@+id/imageView7"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginEnd="200dp"
-                android:layout_marginBottom="30dp"
-                android:adjustViewBounds="true"
-                android:contentDescription="@string/img_description"
-                app:srcCompat="@drawable/vegetable" />
+                <Button
+                    android:id="@+id/buttonOfferSix"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="225dp"
+                    android:layout_marginTop="-115dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@color/colorAccent"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/offer_electro"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF" />
 
-            <Button
-                android:id="@+id/buttonOfferSeven"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="225dp"
-                android:layout_marginTop="-145dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginBottom="20dp"
-                android:background="@color/colorAccent"
-                android:fontFamily="@font/roboto"
-                android:text="@string/offer_vegetable"
-                android:textAlignment="center"
-                android:textColor="#FFFFFF" />
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="200dp"
+                    android:layout_marginBottom="30dp"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/img_description"
+                    app:srcCompat="@drawable/vegetable" />
 
-            <ImageView
-                android:id="@+id/imageView8"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginEnd="200dp"
-                android:layout_marginBottom="30dp"
-                android:adjustViewBounds="true"
-                android:contentDescription="@string/img_description"
-                app:srcCompat="@drawable/party" />
+                <Button
+                    android:id="@+id/buttonOfferSeven"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="225dp"
+                    android:layout_marginTop="-145dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@color/colorAccent"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/offer_vegetable"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF" />
 
-            <Button
-                android:id="@+id/buttonOfferEight"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="225dp"
-                android:layout_marginTop="-130dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginBottom="20dp"
-                android:background="@color/colorAccent"
-                android:fontFamily="@font/roboto"
-                android:text="@string/offer_party"
-                android:textAlignment="center"
-                android:textColor="#FFFFFF" />
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="200dp"
+                    android:layout_marginBottom="30dp"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/img_description"
+                    app:srcCompat="@drawable/party" />
 
-            <ImageView
-                android:id="@+id/imageView9"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginEnd="200dp"
-                android:layout_marginBottom="30dp"
-                android:adjustViewBounds="true"
-                android:contentDescription="@string/img_description"
-                app:srcCompat="@drawable/coffee" />
+                <Button
+                    android:id="@+id/buttonOfferEight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="225dp"
+                    android:layout_marginTop="-130dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@color/colorAccent"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/offer_party"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF" />
 
-            <Button
-                android:id="@+id/buttonOfferNine"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="225dp"
-                android:layout_marginTop="-130dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginBottom="20dp"
-                android:background="@color/colorAccent"
-                android:fontFamily="@font/roboto"
-                android:text="@string/offer_coffee"
-                android:textAlignment="center"
-                android:textColor="#FFFFFF" />
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="200dp"
+                    android:layout_marginBottom="30dp"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/img_description"
+                    app:srcCompat="@drawable/coffee" />
 
-            <ImageView
-                android:id="@+id/imageView10"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="35dp"
-                android:layout_marginEnd="200dp"
-                android:layout_marginBottom="30dp"
-                android:adjustViewBounds="true"
-                android:contentDescription="@string/img_description"
-                app:srcCompat="@drawable/hotdog" />
+                <Button
+                    android:id="@+id/buttonOfferNine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="225dp"
+                    android:layout_marginTop="-130dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@color/colorAccent"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/offer_coffee"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF" />
 
-            <Button
-                android:id="@+id/buttonOfferTen"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="225dp"
-                android:layout_marginTop="-130dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginBottom="20dp"
-                android:background="@color/colorAccent"
-                android:fontFamily="@font/roboto"
-                android:text="@string/offer_hotdog"
-                android:textAlignment="center"
-                android:textColor="#FFFFFF" />
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginEnd="200dp"
+                    android:layout_marginBottom="30dp"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/img_description"
+                    app:srcCompat="@drawable/hotdog" />
 
-        </LinearLayout>
-    </ScrollView>
+                <Button
+                    android:id="@+id/buttonOfferTen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="225dp"
+                    android:layout_marginTop="-130dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@color/colorAccent"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/offer_hotdog"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

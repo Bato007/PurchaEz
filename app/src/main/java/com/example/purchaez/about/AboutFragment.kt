@@ -6,20 +6,25 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
+import androidx.databinding.DataBindingUtil
 import com.example.purchaez.R
+import com.example.purchaez.databinding.AboutFragmentBinding
 
 /**
  * A simple [Fragment] subclass.
  */
 class AboutFragment : Fragment() {
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        return TextView(activity).apply {
-            setText(R.string.hello_blank_fragment)
-        }
+    private lateinit var binding: AboutFragmentBinding
+
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?): View? {
+        (activity as AppCompatActivity).supportActionBar?.title = "PurchaEz"
+        binding = DataBindingUtil.inflate(inflater,
+            R.layout.about_fragment, container, false)
+
+        return binding.root
     }
 
 }
