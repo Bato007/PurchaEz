@@ -25,7 +25,7 @@ android {
 
     dataBinding {
         //noinspection DataBindingWithoutKapt
-        enabled = true
+        enabled  true
     }
     kotlinOptions {
         jvmTarget = JavaVersion.VERSION_1_8.toString()

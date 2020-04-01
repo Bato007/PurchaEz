@@ -12,14 +12,17 @@ import com.example.purchaez.recycleView.Items
 class MainViewModel: ViewModel() {
 
     // Live Data
-    private val _totalMoney = MutableLiveData<Float>()
-    val totalMoney: LiveData<Float>
+    private val _totalMoney = MutableLiveData<String>()
+    val totalMoney: LiveData<String>
             get() = _totalMoney
 
-    private var item: MutableList<Items> = ArrayList()
+    private var item: ArrayList<Items> = ArrayList()
     private lateinit var dataBase: DataBaseHandler
     private var logged = 0
 
+    init {
+        _totalMoney.value = "0"
+    }
 
     // Crear cuenta
     // Arraylist (0) username (1) password (2) confirmpassword (3) email
@@ -57,9 +60,17 @@ class MainViewModel: ViewModel() {
     }
 
     fun sendItem(sent: Items){
-        val value = sent.cost
+        _totalMoney.value = ((_totalMoney.value!!.toFloat()).plus(sent.cost * sent.number)).toString()
         
         item.add(sent)
+    }
+
+    fun getList(): ArrayList<Items> {
+        return item
+    }
+
+    fun getTotalValue(): String{
+        return _totalMoney.value.toString()
     }
 
 }

@@ -1,15 +1,17 @@
+@file:Suppress("DEPRECATION")
+
 package com.example.purchaez.to_buy
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.view.*
 import androidx.fragment.app.Fragment
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
+import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.purchaez.MainViewModel
 import com.example.purchaez.R
 import com.example.purchaez.databinding.ToBuyFragmentBinding
 import com.example.purchaez.recycleView.PurchaEzAdapter
@@ -22,6 +24,7 @@ class ToBuyFragment : Fragment() {
 
     private lateinit var binding: ToBuyFragmentBinding
     private lateinit var purchaEzA: PurchaEzAdapter
+    private lateinit var mainViewModel: MainViewModel
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?): View? {
@@ -30,6 +33,11 @@ class ToBuyFragment : Fragment() {
             R.layout.to_buy_fragment, container, false)
 
         val recycler = binding.recyclerView
+        mainViewModel = ViewModelProviders.of(activity!!).get(MainViewModel::class.java)
+
+        binding.mainViewModel = mainViewModel
+
+        binding.lifecycleOwner = viewLifecycleOwner
 
         recycler.apply {
             layoutManager = LinearLayoutManager(this.context!!)
@@ -37,7 +45,7 @@ class ToBuyFragment : Fragment() {
             addItemDecoration(topSpacingDecorator)
             purchaEzA = PurchaEzAdapter()
             adapter =purchaEzA
-            // Hacer submit de las answers
+            purchaEzA.submitList(mainViewModel.getList())
         }
 
         binding.addItem.setOnClickListener{view: View ->
@@ -61,10 +69,11 @@ class ToBuyFragment : Fragment() {
 
         // Consiguiendo el txt
         for(i in purchaEzA.getItem()){
-            sharedBody += i.name + " Q"
-            sharedBody += i.cost.toString()
+            sharedBody += "-" + i.name
+            sharedBody += " Q" + i.cost.toString()
+            sharedBody += " Cantidad: " + i.number.toString() + "\n"
         }
-
+        sharedBody += "Total a consumir Q" + mainViewModel.getTotalValue()
         intent.putExtra(Intent.EXTRA_TEXT, sharedBody)
         startActivity(Intent.createChooser(intent, "Share Using"))
         return super.onOptionsItemSelected(item)

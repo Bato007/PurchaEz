@@ -5,7 +5,9 @@
     tools:context="com.example.purchaez.to_buy.ToBuyFragment">
 
     <data>
-
+        <variable
+            name="mainViewModel"
+            type="com.example.purchaez.MainViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -29,11 +31,13 @@
             android:id="@+id/list"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="56dp"
+            android:layout_marginTop="32dp"
             android:text="@string/your_market_list"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp"
             app:layout_constraintBottom_toTopOf="@+id/totalCost"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_bias="0.504"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -41,11 +45,23 @@
             android:id="@+id/totalCost"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@{}"
+            android:text="@{mainViewModel.totalMoney}"
             app:layout_constraintBottom_toTopOf="@+id/recyclerView"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/list" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total_in_q"
+            app:layout_constraintBottom_toTopOf="@+id/recyclerView"
+            app:layout_constraintEnd_toStartOf="@+id/totalCost"
+            app:layout_constraintHorizontal_bias="0.832"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/list"
+            tools:ignore="MissingConstraints" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerView"

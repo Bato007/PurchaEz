@@ -40,10 +40,12 @@ class PurchaEzAdapter: RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     class ItemViewHolder constructor(itemView: View): RecyclerView.ViewHolder(itemView){
         var name = itemView.listItem
         var cost = itemView.listCost
+        var number = itemView.itemNumber
 
         fun bind(item: Items){
             name.setText(item.name)
             cost.setText(item.cost.toString())
+            number.setText(item.number.toString())
         }
 
     }

@@ -21,22 +21,38 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.164" />
 
         <EditText
             android:id="@+id/costItem"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:autofillHints="@string/product_cost"
             android:ems="10"
             android:hint="@string/product_cost"
             android:inputType="numberDecimal"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toTopOf="@+id/productNumber"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputList" />
+
+        <EditText
+            android:id="@+id/productNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/number_of_products"
+            android:inputType="number"
             android:textAlignment="center"
             app:layout_constraintBottom_toTopOf="@+id/addButton"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/inputList"
-            android:autofillHints="@string/product_cost" />
+            app:layout_constraintTop_toBottomOf="@+id/costItem"
+            android:autofillHints="@string/number_of_products" />
 
         <Button
             android:id="@+id/addButton"
@@ -48,6 +64,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/costItem" />
+            app:layout_constraintTop_toBottomOf="@+id/productNumber" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
