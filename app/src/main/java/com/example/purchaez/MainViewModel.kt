@@ -73,4 +73,8 @@ class MainViewModel: ViewModel() {
         return _totalMoney.value.toString()
     }
 
+    fun setNewList(newList: ArrayList<Items>){
+        item = newList
+    }
+
 }

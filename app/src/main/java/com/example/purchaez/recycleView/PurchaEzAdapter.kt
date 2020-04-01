@@ -9,7 +9,8 @@ import kotlinx.android.synthetic.main.card_view.view.*
 
 class PurchaEzAdapter: RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
-    private var item: List<Items> = ArrayList()
+    private var item: ArrayList<Items> = ArrayList()
+    private var xPosition: Int = 0
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         return ItemViewHolder(
@@ -21,6 +22,12 @@ class PurchaEzAdapter: RecyclerView.Adapter<RecyclerView.ViewHolder>() {
         when(holder){
             is ItemViewHolder -> {
                 holder.bind(item.get(position))
+
+                holder.itemView.setOnClickListener{
+                    xPosition = position
+                    item.removeAt(position)
+                }
+
             }
         }
     }
@@ -29,12 +36,16 @@ class PurchaEzAdapter: RecyclerView.Adapter<RecyclerView.ViewHolder>() {
         return item.size
     }
 
-    fun submitList(answerList: List<Items>){
+    fun submitList(answerList: ArrayList<Items>){
         item = answerList
     }
 
-    fun getItem(): List<Items> {
+    fun getItem(): ArrayList<Items> {
         return item
+    }
+
+    fun getDeleted():Int{
+        return xPosition
     }
 
     class ItemViewHolder constructor(itemView: View): RecyclerView.ViewHolder(itemView){
