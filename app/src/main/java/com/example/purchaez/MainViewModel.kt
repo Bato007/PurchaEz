@@ -16,7 +16,7 @@ class MainViewModel: ViewModel() {
     val totalMoney: LiveData<Float>
             get() = _totalMoney
 
-    private var item: List<Items> = ArrayList()
+    private var item: MutableList<Items> = ArrayList()
     private lateinit var dataBase: DataBaseHandler
     private var logged = 0
 
@@ -54,6 +54,12 @@ class MainViewModel: ViewModel() {
 
     fun checkLogged(): Int {
         return logged
+    }
+
+    fun sendItem(sent: Items){
+        val value = sent.cost
+        
+        item.add(sent)
     }
 
 }
