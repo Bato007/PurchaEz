@@ -6,8 +6,8 @@
     <string name="buying_record">Buying Record</string>
     <string name="offers">Offers</string>
     <string name="todo">TODO</string>
-    <string name="sing_in">Sing In</string>
-    <string name="sing_up">Sing Up</string>
+    <string name="sing_in">Sign In</string>
+    <string name="sing_up">Sign Up</string>
     <string name="username">Username</string>
     <string name="password">Password</string>
     <string name="confirm_password">Confirm Password</string>

@@ -33,15 +33,17 @@ class AddListFragment : Fragment() {
         mainViewModel = ViewModelProviders.of(activity!!).get(MainViewModel::class.java)
 
         binding.addButton.setOnClickListener{
-            if(binding.costItem.text != null && binding.inputList.text != null && binding.productNumber.text != null){
+            if(binding.costItem.text.isNotBlank() && binding.inputList.text.isNotBlank() && binding.productNumber.text.isNotBlank()){
                 val items = Items(binding.inputList.text.toString(), binding.costItem.text.toString().toFloat(), binding.productNumber.text.toString().toInt())
                 mainViewModel.sendItem(items)
                 binding.costItem.text = null
                 binding.inputList.text = null
                 binding.productNumber.text = null
-            }else{
-                Toast.makeText(this.activity, "Llene todos lso valores", Toast.LENGTH_SHORT).show()
             }
+            else if(binding.costItem.text.isBlank() || binding.inputList.text.isBlank() || binding.productNumber.text.isBlank()){
+                Toast.makeText(this.activity, "Porfavor, ingrese todos los valores", Toast.LENGTH_SHORT).show()
+            }
+
         }
 
         return binding.root
